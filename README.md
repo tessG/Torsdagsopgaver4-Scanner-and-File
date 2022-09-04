@@ -18,7 +18,7 @@
  1.e.1 The method should return a value of type int, with the user's choice. (Hint: int choice = scanner.nextInt()). This should only happen if the choice is valid.
  1.e.2 Additionally the method should print a message to the user if the choice is invalid (ie. greater than the number of options). 
 
-1. In the main method call the showMenu method on the Menu instance, saving the return value (the user response) in a variable. Pass this variable as you call another method in the Main class, <code>doAction</code>, which you will write next.
+1.e.1 In the main method call the showMenu method on the Menu instance, saving the return value (the user response) in a variable. Pass this variable as you call another method in the Main class, <code>doAction</code>, which you will write next.
 
 
 1.g Create a method, doAction in the Main class, that accepts a value of type int as argument. This value represents the user choice of option. In the body of the method write a switch-case where:
