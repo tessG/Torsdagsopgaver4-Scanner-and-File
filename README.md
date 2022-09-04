@@ -5,10 +5,10 @@
 1.a In a new project create an entity class, Menu and a client class, Main with a main method.
 
 1.b In the main method create an ArrayList of type String called 'options' with the following values:
-"1. Start game"
-"2. Resume game"
-"3. Pause game"
-"4. End game"
+<li>"1. Start game"</li>
+<li>"2. Resume game"</li>
+<li>"3. Pause game"</li>
+<li>"4. End game"</li>
 
 1.c Still in the main method, instantiate the Menu class passing the 'options' reference as an argument to the constructor.
 
@@ -21,10 +21,10 @@
 
 
 1.f Create a method, <code>doAction</code> in the Main class, that accepts a value of type int as argument. This value represents the user choice of option. In the body of the method write a switch-case where:
-case 1 will print "Starting the game now"
-case 2 will print "Fetching previously saved game data"
-case 3 will print "Game paused"
-case 4 will print "Ending game"
+<li>case 1 will print "Starting the game now"</li>
+<li>case 2 will print "Fetching previously saved game data"</li>
+<li>case 3 will print "Game paused"</li>
+<li>case 4 will print "Ending game"</li>
 
 
 ## Task 2: Finish the GuessANumber class
