@@ -1,68 +1,52 @@
-# cph-1st-w39
+### Exercises with Scanner and Files
 
 
-Task 1-4 træner base class operations og skrivning af klasser i "ren" Java. De skal kodes i en almindelig text editor uden Processing. Task 5 og 6 er i Processing miljøet.
+## Task 1. Textbased menu
+1.a In a new project create an entity class, Menu and a client class, Main with a main method.
+
+1.b In the main method create an ArrayList of type String called 'options' with the following values:
+"1. Start game"
+"2. Resume game"
+"3. Pause game"
+"4. End game"
+
+1.c Still in the main method, instantiate the Menu class passing the 'options' reference as an argument to the constructor.
+
+1.d Add a constructor to the Menu class that matches the instantiation made in 1.c. The Menu class must have a private attribute of the same type as the parameter passed in the constructor. Assign the passed options ArrayList to the private options ArrayList (hint: this.options = options).
+
+1.e Create a method in the Menu class, <code>showMenu</code> that prints the sentence "Choose an options by typing the number associated" followed by each individual option on its own line. (Hint: use a for-each loop). 
+ 1.e.1 The method should return a value of type int, with the user's choice. (Hint: int choice = scanner.nextInt()). This should only happen if the choice is valid.
+ 1.e.2 Additionally the method should print a message to the user if the choice is invalid (ie. greater than the number of options). 
+
+1. In the main method call the showMenu method on the Menu instance, saving the return value (the user response) in a variable. Pass this variable as you call another method in the Main class, <code>doAction</code>, which you will write next.
 
 
-Såfremt I sidder fast ved en opgave, så tag en kort pause og prøv igen. Hvis I stadig sidder fast ved den, så hop videre til den næste.
-Generelt er det bedre at I får tænkt over alle opgaverne, end at I får løst dem allesammen fuldkommen. 
-Endvidere er I meget velkommen til at tale sammen om opgaverne, men det forventes at I alle koder hver jeres løsning. 
+1.g Create a method, doAction in the Main class, that accepts a value of type int as argument. This value represents the user choice of option. In the body of the method write a switch-case where:
+case 1 will print "Starting the game now"
+case 2 will print "Fetching previously saved game data"
+case 3 will print "Game paused"
+case 4 will print "Ending game"
 
 
-Opgaverne skal ligesom sidste uge, afleveres på moodle, via et link til jeres github repo. 
+## Task 2: Finish the GuessANumber class
+2.a open the java file above called GuessANumber.java and try to finish the code. Follow the steps written as comments in the makeAGuess method.
 
-
-## Task 1. Palindrome
-  1.a Skriv en metode printIfPalindrome() som tager en tekststreng som argument og printer den HVIS den kan skrives bagfra uden at ændre sig. (Hint: Lad dig inspirere i dokumentationen for String klassen)
-  1.b Sørg for at metoden ikke er case-sensitiv.
-  1.c Kald metoden fra main med argumentet "Den laks skal ned", for at teste den.
-
-## Task 2. print en delmængde af et ord med fejlhåndtering
-I denne opgave skal du brug substring metoden, og du skal fange StringIndexOutOfBounds exeption som Java vil smide i tilfælde hvor metoden bliver kaldt med for høje tal.
-2.a Lav en metode, printPartOfWord(), med tre parametre: 1. parameter er ordet, 2. parameter er index for det bogstav delmængden starter med og 3.  parameter er længden på delmængden
-Ex: argumenterne "København", 1 og 4  skal give outputtet "øben". 
-2.b Sørg for at metoden kan håndtere at blive kaldt med tal-argumenter som er for høje eller for lave. Brug en try catch hvor du håndterer undtagelsen StringIndexOutOfBounds. Du bestemmer selv om der skal komme en besked eller ske en udskiftning af det fejlagtige tal-argument.
-
-
-## Task 3 (ArrayList)
-3.a In main Create an array called cars, of type String with 3 car brands in it.
-3.b import java.util.Arrays 
-3.c Create a method that takes a String key as argument and uses this as the key argument in the binarySearch method(Arrays.binarySearch(cars, key)). Note that the array must be sorted before using binarySearch
-3.d let the method return the return value of the binarySearch call and print it from the main method
-
-## Task 4 (Math and Random):
-4.a Create a class MathWork add a main method.
-4.b Write a method 'divisible', that takes in an integer as a parameter and prints all values between 0 and 100 that are divisible by the parameter received. 
-    (hint: you need to use the % operator)
-4.c call the method from main 
-4.d add the following array to the class: int[] arr = { 1, 1, 1, 2, 2, 3, 3, 3, 4, 5, 5, 5, 6, 6, 7, 8, 8, 9, 9, 10 }
-4.e Write a method, 'getRandom' that returns a random element from the above array.
-4.d Write a function that takes an integer as a parameter and prints the number. After that, it subtracts one from the input and calls itself again (recursion). If the input is less than zero, it should no longer call itself. 
-4.e Write a method, fibunacci that takes two integers as parameters and prints the first of them.
- Each printed value should followed by a tab ( \\t ). Then have the function calculate and print the fibunacci sequence (0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144) by calling itself. If the input is greater than 1000, then stop. Start the function by calling it from main with the input (1, 1).
-(hint: how to calculate the fibunacci sequence: https://en.wikipedia.org/wiki/Fibonacci_number )
-
-## Task 5 (Debugging):
-In the directory above named "Debugging", there are 10 different small sketches, each of which containing some kind of error. For each of the sketches, try to run it firstly, then have a look at the output and afterwards fix the error. You're done with the sketch, once it prints "Job's done". 
-
-
-## Task 6: Draw a chess board using a nested for loop and a double int array. 
-In this task you will create an integer array with 2 dimensions, that holds values of 0, 1, 0, 1, etc. The instructions below will help you get started. 
-
-6.a Create a double int called board[][] with the length of 8 in both arrays. 
-6.b In setup() create a double for loop that loops through the board and alternates between assigning the value of 0 and 1 (e.g. board[x][y] = 0;). Hint: use the modulus operator
-6.c In draw() create a double for loop that loops through the board and draws a rect for each element with the sideLength of 40 (e.g. rect(x * sideLength, y * sideLength, sideLength, sideLength); )
-6.d Before drawing the rect in the previous step, add a fill() statement, that fills with the value of 0 if the board[x][y] == 0 and  255 if the the board[x][y] == 1.
-
-# Other exercises (optional)
-If you got stuck or if you finished the above, following are 3 links to exercises, where there is something for all levels.
-
-https://codingbat.com/java 
-
-https://www.codecademy.com/catalog/language/java 
+## Task 3: load options
  
-https://www.hackerrank.com/domains/java 
+3.a Start a new textfile with the exact text given here:
+"Expresso", "Americano" , "Macchiato", "Flat White",  "Latte"
+Save it as a menu.csv file and placed it in the same folder as Cafe.java
 
-https://edabit.com/ 
+3.a Create a class called Cafe with a main method. In the global scope of this class add an ArrayList of type String called 'menu'.
 
-https://www.programiz.com/java-programming 
+3.c Add a method  <code>loadMenuData</code> to the class with the parameter 'filename' of type String. 
+  Have the method load the file, add it to a Scanner object.
+
+3.d Use the split method to convert the data into a String array.(hint: scanner.nextLine().split())
+  This will return a String array. Loop over the returned String Array and for each element create a new String with the value of the element preceeded by an number: For the element "Expresso" there will be a new String with the value "1. Expresso". 
+  Then add the new String to the menu ArrayList which you created in step 3.a
+
+3.d Reuse the Menu class from Task 1. (just copy it into the folder of the Cafe.java). Create a new instance of the Menu class, with the cafe options as argument. Call the showMenu method on the Menu object. Remember the method will return the user's choice? Print the name of the coffee that corresponds to the user's choice. 
+
+
+## Task 4: write to file
