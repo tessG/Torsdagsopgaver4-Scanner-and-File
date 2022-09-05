@@ -78,11 +78,13 @@ Save it as a menu.csv file and placed it in the same folder as Cafe.java
 4.c Add a method  <code>loadMenuData</code> to the class with the parameter 'filename' of type String. 
   Have the method load the file, add it to a Scanner object.
 
-4.d Use the split method to convert the data into a String array...
+4.d Use the split method to convert the data into a String array.
 <details>
   <summary>Hint</summary>
   <p>String [] data = scanner.nextLine().split())</p>
 </detail>
+
+
 
 
 4.e Loop over the String Array returned by the split method above, and for each element create a new String with the value of this element preceeded by an number: 
