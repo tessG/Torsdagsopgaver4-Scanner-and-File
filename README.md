@@ -41,8 +41,12 @@
   <p>this.options = options</p>
 </details>
 
-3.e Create a method in the Menu class, <code>showMenu</code> that prints the sentence "Choose an options by typing the number associated" followed by each individual option on its own line. (Hint: use a for-each loop). 
- 
+3.e Create a method in the Menu class, <code>showMenu</code> that prints the sentence "Choose an options by typing the number associated" followed by each individual option on its own line.  
+ <details>
+  <summary>Hint</summary>
+  <p>use a for-each loop</p>
+</details>
+
  >3.e.1 The method should return a value of type int, with the user's choice. 
  <details>
   <summary>Hint</summary>
