@@ -78,15 +78,18 @@ Save it as a menu.csv file and placed it in the same folder as Cafe.java
 4.c Add a method  <code>loadMenuData</code> to the class with the parameter 'filename' of type String. 
   Have the method load the file, add it to a Scanner object.
 
-4.d Use the split method to convert the data into a String array.\
+4.d Use the split method to convert the data into a String array...
 <details>
   <summary>Hint</summary>
-  <p>scanner.nextLine().split())</p>
+  <p>String [] data = scanner.nextLine().split())</p>
 </detail>
 
-This will return a String array. Loop over the returned String Array and for each element create a new String with the value of the element preceeded by an number: For the element "Expresso" there will be a new String with the value "1. Expresso". Then add the new String to the menu ArrayList which you created in step 4.b.
 
-4.e Reuse the Menu class from Task 3. (copy it into the folder of the Cafe.java). Create a new instance of the Menu class, with the <code>menu</code> ArrayList as argument. Call the <code>showMenu</code> method on the Menu object. Remember the method will return the user's choice? Print the name of the coffee that corresponds to the user's choice. 
+4.e Loop over the String Array returned by the split method above, and for each element create a new String with the value of this element preceeded by an number: 
+ Like so:  "1. Expresso".
+ Then add this new String to the menu ArrayList which you created in step 4.b.
+
+4.f Reuse the Menu class from Task 3. (copy it into the folder of the Cafe.java). Create a new instance of the Menu class, with the <code>menu</code> ArrayList as argument. Call the <code>showMenu</code> method on the Menu object. Remember the method will return the user's choice? Print the name of the coffee that corresponds to the user's choice. 
 
 
 ## Task 5: write to file
