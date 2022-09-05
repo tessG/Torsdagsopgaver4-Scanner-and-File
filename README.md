@@ -39,11 +39,11 @@
 
 3.e Create a method in the Menu class, <code>showMenu</code> that prints the sentence "Choose an options by typing the number associated" followed by each individual option on its own line. (Hint: use a for-each loop). 
  
- 3.e.1 The method should return a value of type int, with the user's choice. (Hint: int choice = scanner.nextInt()). This should only happen if the choice is valid.
+ >3.e.1 The method should return a value of type int, with the user's choice. (Hint: int choice = scanner.nextInt()). This should only happen if the choice is valid.
  
- 3.e.2 Additionally the method should print a message to the user if the choice is invalid (ie. greater than the number of options). 
+ >3.e.2 Additionally the method should print a message to the user if the choice is invalid (ie. greater than the number of options). 
  
- 3.e.3 In the main method call the showMenu method on the Menu instance, saving the return value (the user response) in a variable. Pass this variable as you call another method in the Main class, <code>doAction</code>, which you will write next.
+ >3.e.3 In the main method call the showMenu method on the Menu instance, saving the return value (the user response) in a variable. Pass this variable as you call another method in the Main class, <code>doAction</code>, which you will write next.
 
 
 3.f Create a method, <code>doAction</code> in the Main class, that accepts a value of type int as argument. This value represents the user choice of option. In the body of the method write a switch-case where:
@@ -65,7 +65,11 @@ Save it as a menu.csv file and placed it in the same folder as Cafe.java
 4.c Add a method  <code>loadMenuData</code> to the class with the parameter 'filename' of type String. 
   Have the method load the file, add it to a Scanner object.
 
-4.d Use the split method to convert the data into a String array.(hint: scanner.nextLine().split())
+4.d Use the split method to convert the data into a String array./
+<details>
+  <summary>Hint</summary>
+  <p>scanner.nextLine().split())</p>
+</details>
   This will return a String array. Loop over the returned String Array and for each element create a new String with the value of the element preceeded by an number: For the element "Expresso" there will be a new String with the value "1. Expresso". 
   Then add the new String to the menu ArrayList which you created in step 4.b
 
