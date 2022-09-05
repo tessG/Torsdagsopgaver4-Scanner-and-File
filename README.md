@@ -53,7 +53,7 @@ Today's tasks should be coded using the IntelliJ IDE. For each Task you will cre
   <summary>Hint</summary>
   <p>int choice = scanner.nextInt()</p>
 </details>
-This should only happen if the choice is valid.  
+This should only happen if the choice is valid.  <br/>
 
  
  3.e.2 Additionally the method should print a message to the user if the choice is invalid (ie. greater than the number of options). 
