@@ -1,5 +1,5 @@
 ### Exercises with Scanner and Files
-Today's tasks should be coded using the IntelliJ IDE. For each Task you should create a new project, as each task will require you to create a Main class with a main method. In some tasks you will write all the code in this main method, while in others you will be asked to make both a Main class with a main method in it (sometimes refered to as the "client class") and an "entity class" whithout a main method but with a constructor. The former is named so because it uses the services of the entity class.
+Today's tasks should be coded using the IntelliJ IDE. For each Task you will create a new project, as each task will require you to create a Main class with a main method. In some tasks you will write all the code in this main method, while in others you will be asked to make both a Main class with a main method in it (sometimes refered to as the "client class") and an "entity class" whithout a main method but with a constructor. The former is named so because it uses the services of the entity class.
 
 ## Task 1: Scanner basics
 1.a: Start a new project and create a Main class with a main method.
@@ -48,16 +48,16 @@ Today's tasks should be coded using the IntelliJ IDE. For each Task you should c
   <p>use a for-each loop</p>
 </details>
 
- >3.e.1 The method should return a value of type int, with the user's choice. 
+ 3.e.1 The method should return a value of type int, with the user's choice. 
  <details>
   <summary>Hint</summary>
   <p>int choice = scanner.nextInt()</p>
 </details>
 This should only happen if the choice is valid.
  
- >3.e.2 Additionally the method should print a message to the user if the choice is invalid (ie. greater than the number of options). 
+ 3.e.2 Additionally the method should print a message to the user if the choice is invalid (ie. greater than the number of options). 
  
- >3.e.3 In the main method call the showMenu method on the Menu instance, saving the return value (the user response) in a variable. Pass this variable as you call another method in the Main class, <code>doAction</code>, which you will write next.
+ 3.e.3 In the main method call the showMenu method on the Menu instance, saving the return value (the user response) in a variable. Pass this variable as you call another method in the Main class, <code>doAction</code>, which you will write next.
 
 
 3.f Create a method, <code>doAction</code> in the Main class, that accepts a value of type int as argument. This value represents the user choice of option. In the body of the method write a switch-case where:
