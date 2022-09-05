@@ -1,6 +1,8 @@
 ### Exercises with Scanner and Files
 Today's tasks should be coded using the IntelliJ IDE. For each Task you will create a new project, as each task will require you to create a Main class with a main method. In some tasks you will write all the code in this main method, while in others you will be asked to make both a Main class with a main method in it (sometimes refered to as the "client class") and an "entity class" whithout a main method but with a constructor. The former is named so because it uses the services of the entity class.
 
+---
+
 ## Task 1: Scanner basics
 1.a: Start a new project and create a Main class with a main method.
 
@@ -20,10 +22,12 @@ Today's tasks should be coded using the IntelliJ IDE. For each Task you will cre
 
 1.i: Declare a third variable of type int. To this variable, assign the calculated number of years until the user can retire. You may assume retirement starts at 67 years. Print the result
 
+---
 
 ## Task 2: Finish the GuessANumber class
 2.a Open the java file above called GuessANumber.java and try to finish the code. Follow the steps written as comments in the <code>makeAGuess</code> method.
 
+---
 
 ## Task 3. Textbased menu
 3.a Create an entity class, Menu and a client class, Main with a main method.
@@ -48,20 +52,20 @@ Today's tasks should be coded using the IntelliJ IDE. For each Task you will cre
   <p>use a for-each loop for printing the options</p>
 </details>
 
-   3.e.1 Let the <code>showMenu</code> method return the user's choice. But only of the choice is valid (i.e within the range of the options ArrayList).
++ Let the <code>showMenu</code> method return the user's choice. But only of the choice is valid (i.e within the range of the options ArrayList).
  
-   3.e.2 Additionally the method should print a message to the user if the choice is invalid (ie. greater than the number of options). 
++ Additionally the method should print a message to the user if the choice is invalid (ie. greater than the number of options). 
  
-   3.e.3 In the main method call the showMenu method on the Menu instance, saving the return value (the user response) in a variable. Pass this variable as you call another method in the Main class, <code>doAction</code>, which you will write next.
+3.f In the main method call the showMenu method on the Menu instance, saving the return value (the user response) in a variable. Pass this variable as you call another method in the Main class, <code>doAction</code>, which you will write next.
 
 
-3.f Create a method, <code>doAction</code> in the Main class, that accepts a value of type int as argument. This value represents the user choice of option. In the body of the method write a switch-case where:
+3.g Create a method, <code>doAction</code> in the Main class, that accepts a value of type int as argument. This value represents the user choice of option. In the body of the method write a switch-case where:
    <li>case 1 will print "Starting the game now"</li>
    <li>case 2 will print "Fetching previously saved game data"</li>
    <li>case 3 will print "Game paused"</li>
    <li>case 4 will print "Ending game"</li>
 
-
+---
 
 ## Task 4: load options
  
