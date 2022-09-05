@@ -2,14 +2,22 @@
 
 ## Task 1: Scanner basics
 1.a: Start a new project and create a Main class with a main method.
-1.b: In the main method start by printing a message to the user: "Please type your name".
-1.c: create a Scanner object for reading the command line (remember to import the Scanner class from the util library: <code>import java.util.Scanner;) </code>
-1.d: Declare a String variable, <code>name</code> and assign the content of the scanner to it.
-1.e: Print the value the user writes (print the <code>name</code> variable)
-1.f: Print another message to the user: "Please type your age"
-1.g: Declare another variable of type int, <code>age</code>
-1.e: Print the value the user writes (print the <code>age</code> variable)
 
+1.b: In the main method start by printing a message to the user: "Please type your name".
+
+1.c: Instantiate (create) a Scanner object for reading the command line (remember to import the Scanner class from the util library: <code>import java.util.Scanner;) </code>
+
+1.d: Declare a String variable, <code>name</code> and assign the content of the scanner to it.
+
+1.e: Print the value the user writes (print the <code>name</code> variable)
+
+1.f: Print another message to the user: "Please type your age"
+
+1.g: Declare another variable of type int, <code>age</code>
+
+1.h: Print the value the user writes (print the <code>age</code> variable)
+
+1.i: Declare a third variable of type int. To this variable, assign the calculated number of years until the user can retire. You may assume retirement starts at 67 years. Print the result
 
 
 ## Task 2: Finish the GuessANumber class
