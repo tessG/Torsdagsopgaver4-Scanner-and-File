@@ -13,7 +13,7 @@
 
 1.f: Print another message to the user: "Please type your age"
 
-1.g: Declare another variable of type int, <code>age</code>
+1.g: Declare another variable of type int, <code>age</code> and assign the content of the scanner to it (you may reuse the Scanner object created in 1.c).
 
 1.h: Print the value the user writes (print the <code>age</code> variable)
 
@@ -33,13 +33,22 @@
 <li>"3. Pause game"</li>
 <li>"4. End game"</li>
 
-3.c Still in the main method, instantiate the Menu class passing the 'options' reference as an 3rgument to the constructor.
+3.c Still in the main method, instantiate the Menu class passing the 'options' reference as an argument to the constructor.
 
-3.d Add a constructor to the Menu class that matches the instantiation made in 3.c. The Menu class must have a private attribute of the same type as the parameter passed in the constructor. Assign the passed options ArrayList to the private options ArrayList (hint: this.options = options).
+3.d Add a constructor to the Menu class that matches the instantiation made in 3.c. The Menu class must have a private attribute of the same type as the parameter passed in the constructor. Assign the passed options ArrayList to the private options ArrayList 
+<details>
+  <summary>Hint</summary>
+  <p>this.options = options</p>
+</details>
 
 3.e Create a method in the Menu class, <code>showMenu</code> that prints the sentence "Choose an options by typing the number associated" followed by each individual option on its own line. (Hint: use a for-each loop). 
  
- >3.e.1 The method should return a value of type int, with the user's choice. (Hint: int choice = scanner.nextInt()). This should only happen if the choice is valid.
+ >3.e.1 The method should return a value of type int, with the user's choice. 
+ <details>
+  <summary>Hint</summary>
+  <p>int choice = scanner.nextInt()</p>
+</details>
+This should only happen if the choice is valid.
  
  >3.e.2 Additionally the method should print a message to the user if the choice is invalid (ie. greater than the number of options). 
  
@@ -65,11 +74,11 @@ Save it as a menu.csv file and placed it in the same folder as Cafe.java
 4.c Add a method  <code>loadMenuData</code> to the class with the parameter 'filename' of type String. 
   Have the method load the file, add it to a Scanner object.
 
-4.d Use the split method to convert the data into a String array./
+4.d Use the split method to convert the data into a String array.\
 <details>
   <summary>Hint</summary>
   <p>scanner.nextLine().split())</p>
-</details>
+</detail>
   This will return a String array. Loop over the returned String Array and for each element create a new String with the value of the element preceeded by an number: For the element "Expresso" there will be a new String with the value "1. Expresso". 
   Then add the new String to the menu ArrayList which you created in step 4.b
 
