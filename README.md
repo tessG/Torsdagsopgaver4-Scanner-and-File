@@ -1,4 +1,5 @@
 ### Exercises with Scanner and Files
+Tasks should be coded in IntelliJ. For each Task you should create a new project, as each task will require you to create a Main class with a main method. In some tasks you will write all the code in this main method, while in others you will be asked to make both a Main class with a main method in it (sometimes refered to as the "client class") and an "entity class" whithout a main method but with a constructor. The former is named so because it uses the services of the entity class.
 
 ## Task 1: Scanner basics
 1.a: Start a new project and create a Main class with a main method.
@@ -25,7 +26,7 @@
 
 
 ## Task 3. Textbased menu
-3.a In a new project create an entity class, Menu and a client class, Main with a main method.
+3.a Create an entity class, Menu and a client class, Main with a main method.
 
 3.b In the main method create an ArrayList of type String called 'options' with the following values:
 <li>"1. Start game"</li>
