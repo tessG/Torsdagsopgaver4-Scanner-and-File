@@ -48,24 +48,24 @@ Today's tasks should be coded using the IntelliJ IDE. For each Task you will cre
   <p>use a for-each loop</p>
 </details>
 
- 3.e.1 The method should return a value of type int, with the user's choice. 
+ >3.e.1 The method should return a value of type int, with the user's choice. 
  <details>
   <summary>Hint</summary>
   <p>int choice = scanner.nextInt()</p>
 </details>
-This should only happen if the choice is valid.  <br/>
+>This should only happen if the choice is valid.  <br/>
 
  
- 3.e.2 Additionally the method should print a message to the user if the choice is invalid (ie. greater than the number of options). 
+ >3.e.2 Additionally the method should print a message to the user if the choice is invalid (ie. greater than the number of options). 
  
- 3.e.3 In the main method call the showMenu method on the Menu instance, saving the return value (the user response) in a variable. Pass this variable as you call another method in the Main class, <code>doAction</code>, which you will write next.
+ >3.e.3 In the main method call the showMenu method on the Menu instance, saving the return value (the user response) in a variable. Pass this variable as you call another method in the Main class, <code>doAction</code>, which you will write next.
 
 
-3.f Create a method, <code>doAction</code> in the Main class, that accepts a value of type int as argument. This value represents the user choice of option. In the body of the method write a switch-case where:
-<li>case 1 will print "Starting the game now"</li>
-<li>case 2 will print "Fetching previously saved game data"</li>
-<li>case 3 will print "Game paused"</li>
-<li>case 4 will print "Ending game"</li>
+>3.f Create a method, <code>doAction</code> in the Main class, that accepts a value of type int as argument. This value represents the user choice of option. In the body of the method write a switch-case where:
+><li>case 1 will print "Starting the game now"</li>
+><li>case 2 will print "Fetching previously saved game data"</li>
+><li>case 3 will print "Game paused"</li>
+><li>case 4 will print "Ending game"</li>
 
 
 
