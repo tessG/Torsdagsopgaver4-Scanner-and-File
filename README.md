@@ -83,10 +83,10 @@ Save it as a menu.csv file and placed it in the same folder as Cafe.java
   <summary>Hint</summary>
   <p>scanner.nextLine().split())</p>
 </detail>
-  This will return a String array. Loop over the returned String Array and for each element create a new String with the value of the element preceeded by an number: For the element "Expresso" there will be a new String with the value "1. Expresso". 
-  Then add the new String to the menu ArrayList which you created in step 4.b
 
-4.d Reuse the Menu class from Task 3. (copy it into the folder of the Cafe.java). Create a new instance of the Menu class, with the <code>menu</code> ArrayList as argument. Call the <code>showMenu</code> method on the Menu object. Remember the method will return the user's choice? Print the name of the coffee that corresponds to the user's choice. 
+This will return a String array. Loop over the returned String Array and for each element create a new String with the value of the element preceeded by an number: For the element "Expresso" there will be a new String with the value "1. Expresso". Then add the new String to the menu ArrayList which you created in step 4.b.
+
+4.e Reuse the Menu class from Task 3. (copy it into the folder of the Cafe.java). Create a new instance of the Menu class, with the <code>menu</code> ArrayList as argument. Call the <code>showMenu</code> method on the Menu object. Remember the method will return the user's choice? Print the name of the coffee that corresponds to the user's choice. 
 
 
 ## Task 5: write to file
