@@ -79,7 +79,7 @@ String choice = scan.nextLine();
 
 4.g Let the <code>showMenu</code> method return the user's choice. 
 
-4.h Create a method, <code>public static void doAction(int choice)</code> in the Main class. The <code> int choice </code> parameter represents the user choice of option. (Don't forget to convert the String to an int).
+4.h Create a method, <code>public static void doAction(int choice)</code> in the Main class. The <code> int choice </code> parameter represents the user choice of option. 
 
 4.i In the body of the method write a <code>switch-case</code> where:
    + case 1 will print "Starting the game now"
@@ -88,7 +88,7 @@ String choice = scan.nextLine();
    + case 4 will print "Ending game"
 
 
-4.j In the main method call the  <code>showMenu</code> -method on the Menu instance, saving the return value (the user response) in a variable. Pass this variable as you call the <code>doAction</code> method in Main.
+4.j In the main method call the  <code>showMenu</code> -method on the Menu instance, saving the return value (the user response) in a variable. Convert the value to an int before using it as an argument in a call to the <code>doAction</code> method in Main.
 
 
 ---
