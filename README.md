@@ -72,17 +72,16 @@ String choice = scan.nextLine();
   </p>
 </details>
 
+3.h Create a method, <code>public static void doAction(int choice)</code> in the Main class. The <code> int choice </code> parameter represents the user choice of option. 
 
-3.h In the main method call the showMenu method on the Menu instance, saving the return value (the user response) in a variable. Pass this variable as you call another method in the Main class, <code>doAction</code>, which you will write next.
-
-
-3.i Create a method, <code>public static doAction(int choice)</code> in the Main class. The <code> int choice </code> parametre represents the user choice of option. 
-
-3.j In the body of the method write a switch-case where:
+3.i In the body of the method write a switch-case where:
    <li>case 1 will print "Starting the game now"</li>
    <li>case 2 will print "Fetching previously saved game data"</li>
    <li>case 3 will print "Game paused"</li>
    <li>case 4 will print "Ending game"</li>
+
+3.j In the main method call the showMenu method on the Menu instance, saving the return value (the user response) in a variable. Pass this variable as you call the <code>doAction</code> method in Main.
+
 
 ---
 
