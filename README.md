@@ -94,62 +94,53 @@ Save it as a menu.csv file and placed it in the same folder as Cafe.java
 
 4.b Create a class called Main with a main method. 
 
-4.c Create another class called Cafe. Give it an attribute called 'menu' of type ArrayList<String>. 
-(Later you will fill this ArrayList with names of the coffees offered by the Cafe.)
+4.c Create another class called Cafe. Give it an attribute called 'coffees' of type ArrayList<String>. 
+(Later you will fill this ArrayList with names of the coffees from the textfile).
 
 
-4.c In the Cafe class, add a method  <code>loadMenuData</code>with the parameter 'filename' of type String. 
-Have the method load the file, add it to a Scanner object.
+4.c In the Cafe class, add a method <code>loadMenuData</code> 
+Have the method load the file above called coffees.txt, like this 
+<code>File file = new File("coffees.txt) </code>  
+(make sure that the path is right)
 
-<detail>
-  <summary>Hint</summary>
-  <p>
-    <code>File file = new File(filename) </code>  
-    (make sure that the path is right!)
-  </p>
-</detail>
 
-4.d Add the file to a new Scanner object. This will need to be wrapped in a try -catch block. 
+4.d In this step you will read from the file, using a Scanner object: Add the <code>file</code> instance to a new Scanner object. (This piece of code will need to be wrapped in a try -catch block)
+
 The solution to this step is given below, but give it a go before peeping.
-
-
 <detail>
   <summary> The solution to this step:
-  </summary>
-
-<code>
-
- 
-     try {
-     
-         Scanner scan = new Scanner(file);
-            
-         
+  </summary><code>try {
+         Scanner scan = new Scanner(file);       
      }catch(FileNotFoundException e){
-     
-        System.out.println("File not found. Check path and filename");
-        
-      }
-</code>        
-</p>
+        System.out.println("File not found. Check path and filename");  
+      }</code></p>
 </detail>
 
 
+4.e Inside the try block from the last step, you will now add this piece of code that loops over the lines of the textfile:
 
 
-4.e Inside the try block, use hasNextLine() on the Scanner instans, to loop over the lines of the file.
- For each line create a new String with the value of this element preceeded by an number: 
- Like so:  "1. Expresso".
- Then add this new String to the menu ArrayList which you created in step 4.b.
+Use a while loop with hasNextLine() on the Scanner instance, to loop over the lines of the file and add the lines to the coffees ArrayList in this class.
+<detail>
+  <summary> peep solution:
+  </summary>
+<code>
+  while(scan.hasNextLine()){
+        coffees.add(scan.nextLine());
+  }
+</code>      
+</detail>
 
-4.f Reuse the Menu class from Task 3. (copy it into the same folder as the other classes you have just written). 
+4.g In the main method create a new instance of the Cafe class and call its <code>loadMenuData</code> -method.
 
-4.g Still in the main method, create a new instance of the Menu class, with the <code>menu</code> ArrayList as argument. 
-Call the <code>showMenu</code> method on the Menu object. 
-
-4.h The  <code>Menu.showMenu()</code> -method will return the user's choice. 
-From the main method, print the name of the coffee that corresponds to the user's choice. 
-
+4.h Still in the main method, print all the elements of the  attribute coffees in the the Cafe instance you just created.
+<detail>
+  <summary> peep solution:
+  </summary>
+<code>
+  you should use a for loop, and in the body of the loop use the <code>get()</code> method of ArrayList.
+</code>      
+</detail>
 
 
 
