@@ -39,6 +39,7 @@ NOTE: Task 4 and 6 are not easy. Follow the steps as long as you can. Use the hi
 
 ## Task 4. Textbased menu for a game
 In this program the user is presented with a list of option. When he types an option, the program will print a respons that corresponds to his choice.
+
 4.a Create an entity class, Menu and a client class, Main with a main method.
 
 4.b In the main method create an ArrayList of type String called 'options' with the following values:
