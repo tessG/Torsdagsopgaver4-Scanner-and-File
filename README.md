@@ -38,6 +38,7 @@ Today's tasks should be coded using the IntelliJ IDE. For each Task you will cre
 <li>"3. Pause game"</li>
 <li>"4. End game"</li>
 
+
 3.c Still in the main method, instantiate the Menu class passing the 'options' reference as an argument to the constructor.
 
 3.d Add a constructor to the Menu class that matches the instantiation made in 3.c. The Menu class must have a private attribute of the same type as the parameter passed in the constructor. Assign the passed options ArrayList to the private options ArrayList 
@@ -97,13 +98,14 @@ Save it as a menu.csv file and placed it in the same folder as Cafe.java
 (Later you will fill this ArrayList with names of the coffees offered by the Cafe.)
 
 
-4.c In the Cafe class, add a method  <code>loadMenuData</code> with the parameter 'filename' of type String. 
-  Have the method load the file, add it to a Scanner object.
+4.c In the Cafe class, add a method  <code>loadMenuData</code>with the parameter 'filename' of type String. 
+Have the method load the file, add it to a Scanner object.
 <details>
   <summary>Hint</summary>
   <p><code>File file = new File(filename) </code>  (make sure that the path is right!)
    </p>
 </detail>
+
 4.d Add the file to a new Scanner object. This will need to be wrapped in a try -catch block. 
 The solution to this step is given below, but give it a go before peeping.
 
@@ -137,11 +139,12 @@ The solution to this step is given below, but give it a go before peeping.
  Like so:  "1. Expresso".
  Then add this new String to the menu ArrayList which you created in step 4.b.
 
-4.f Reuse the Menu class from Task 3. (copy it into the folder of the Cafe.java). 
-Create a new instance of the Menu class, with the <code>menu</code> ArrayList as argument. 
+4.f Reuse the Menu class from Task 3. (copy it into the same folder as the other classes you have just written). 
+
+4.g Still in the main method, create a new instance of the Menu class, with the <code>menu</code> ArrayList as argument. 
 Call the <code>showMenu</code> method on the Menu object. 
 
-4.g The <code> Menu.showMenu() </code> -method will return the user's choice. 
+4.g The  <code>Menu.showMenu()</code> -method will return the user's choice. 
 From the main method, print the name of the coffee that corresponds to the user's choice. 
 
 
