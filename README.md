@@ -6,7 +6,7 @@ NOTE: Task 3 and 5 are not easy. Follow the steps as long as you can. Use the hi
 
 ---
 
-## Task 1: Scanner basics
+## Task 1: Scanner basics: calculate retirement age
 1.a: Start a new project and create a Main class with a main method.
 
 1.b: In the main method start by printing a message to the user: "Please type your name".
@@ -31,11 +31,11 @@ NOTE: Task 3 and 5 are not easy. Follow the steps as long as you can. Use the hi
 2.a Open the java file above called GuessANumber.java and try to finish the code. Follow the steps written as comments in the <code>makeAGuess</code> method. Recursion is mentioned. This means that the method must call itself
 <details>
   <summary>Not sure about recursion?</summary>
-  <p><a href="https://www.geeksforgeeks.org/recursion-in-java/">Read here about it here</a></p>
+  <p><a href="https://www.geeksforgeeks.org/recursion-in-java/">Read about it here</a></p>
 </details>
 ---
 
-## Task 3. Textbased menu
+## Task 3. Textbased menu for a game
 3.a Create an entity class, Menu and a client class, Main with a main method.
 
 3.b In the main method create an ArrayList of type String called 'options' with the following values:
@@ -90,12 +90,12 @@ String choice = scan.nextLine();
 
 
 ---
-## Task 4: load file basics
+## Task 4: load file and write to file basics
 [...]
 
 ---
 
-## Task 5: load options
+## Task 5: load coffee menu for a cafe
  
 5.a Above you will see a file called coffees.txt. Open it and check that is contains 5 names for types of coffee. Download it, or copy it to a new textfile and save it with the same name. Place coffees.txt in the same folder as the classes you will write for this task.
 
