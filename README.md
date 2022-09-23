@@ -119,7 +119,6 @@ The solution to this step is given below, but give it a go before peeping.
         System.out.println("File not found. Check path and filename");  
 
       }
-
 </code>
 </details>
 
@@ -132,9 +131,13 @@ Use a while loop with hasNextLine() on the Scanner instance, to loop over the li
   <summary> peep solution:
   </summary>
 <code>
+
   while(scan.hasNextLine()){
+
         coffees.add(scan.nextLine());
+
   }
+  
 </code>      
 </details>
 
