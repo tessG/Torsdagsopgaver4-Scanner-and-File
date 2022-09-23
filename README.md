@@ -8,7 +8,7 @@ Today's tasks should be coded using the IntelliJ IDE. For each Task you will cre
 
 1.b: In the main method start by printing a message to the user: "Please type your name".
 
-1.c: Instantiate (create) a Scanner object for reading the command line (remember to import the Scanner class from the util library: <code>import java.util.Scanner;) </code>
+1.c: Instantiate (create) a Scanner object for reading the command line (remember to import the Scanner class from the util library: <code>import java.util.Scanner; </code>)
 
 1.d: Declare a String variable, <code>name</code> and assign the content of the scanner to it.
 
@@ -52,7 +52,7 @@ Today's tasks should be coded using the IntelliJ IDE. For each Task you will cre
   <p>use a for-each loop for printing the options</p>
 </details>
 
-+ Let the <code>showMenu</code> method return the user's choice. But only of the choice is valid (i.e within the range of the options ArrayList).
++ Let the <code>showMenu</code> method return the user's choice. But only if the choice is valid (i.e within the range of the options ArrayList).
  
 + Additionally the method should print a message to the user if the choice is invalid (ie. greater than the number of options). 
  
@@ -73,25 +73,60 @@ Today's tasks should be coded using the IntelliJ IDE. For each Task you will cre
 "Expresso", "Americano" , "Macchiato", "Flat White",  "Latte"
 Save it as a menu.csv file and placed it in the same folder as Cafe.java
 
-4.b Create a class called Cafe with a main method. In the global scope of this class add an ArrayList of type String called 'menu'.
+4.b Create a class called Main with a main method. 
 
-4.c Add a method  <code>loadMenuData</code> to the class with the parameter 'filename' of type String. 
+4.c Create another class called Cafe. Give it an attribute called 'menu' of type ArrayList<String>. 
+(Later you will fill this ArrayList with names of the coffees offered by the Cafe.)
+
+
+4.c In the Cafe class, add a method  <code>loadMenuData</code> with the parameter 'filename' of type String. 
   Have the method load the file, add it to a Scanner object.
-
-4.d Use the split method to convert the data into a String array.
 <details>
   <summary>Hint</summary>
-  <p>String [] data = scanner.nextLine().split())</p>
+  <p><code>File file = new File(filename) </code>  (make sure that the path is right!)
+   </p>
+</detail>
+4.d Add the file to a new Scanner object. This will need to be wrapped in a try -catch block. 
+The solution to this step is given below, but give it a go before peeping.
+
+
+<detail>
+  <summary> The solution to this step:
+  </summary>
+
+<code>
+
+ 
+     try {
+     
+         Scanner scan = new Scanner(file);
+            
+         
+     }catch(FileNotFoundException e){
+     
+        System.out.println("File not found. Check path and filename");
+        
+      }
+</code>        
+</p>
 </detail>
 
 
 
 
-4.e Loop over the String Array returned by the split method above, and for each element create a new String with the value of this element preceeded by an number: 
+4.e Inside the try block, use hasNextLine() on the Scanner instans, to loop over the lines of the file.
+ For each line create a new String with the value of this element preceeded by an number: 
  Like so:  "1. Expresso".
  Then add this new String to the menu ArrayList which you created in step 4.b.
 
-4.f Reuse the Menu class from Task 3. (copy it into the folder of the Cafe.java). Create a new instance of the Menu class, with the <code>menu</code> ArrayList as argument. Call the <code>showMenu</code> method on the Menu object. Remember the method will return the user's choice? Print the name of the coffee that corresponds to the user's choice. 
+4.f Reuse the Menu class from Task 3. (copy it into the folder of the Cafe.java). 
+Create a new instance of the Menu class, with the <code>menu</code> ArrayList as argument. 
+Call the <code>showMenu</code> method on the Menu object. 
+
+4.g The <code> Menu.showMenu() </code> -method will return the user's choice. 
+From the main method, print the name of the coffee that corresponds to the user's choice. 
+
+
 
 
 ## Task 5: write to file
