@@ -38,15 +38,15 @@ NOTE: Task 4 and 6 are not easy. Follow the steps as long as you can. Use the hi
 ---
 
 ## Task 4. Textbased menu for a game
-In this program the user is presented with a list of option. When he types an option, the program will print a respons that corresponds to his choice.
+In this program the user is presented with a list of option. When he types the number associated with an option, the program will print a respons that corresponds to his choice.
 
 4.a Create an entity class, Menu and a client class, Main with a main method.
 
 4.b In the main method create an ArrayList of type String called 'options' with the following values:
-<li>"1. Start game"</li>
-<li>"2. Resume game"</li>
-<li>"3. Pause game"</li>
-<li>"4. End game"</li>
++ "1. Start game"
++ "2. Resume game"
++ "3. Pause game"
++ "4. End game"
 
 
 4.c Still in the main method, instantiate the Menu class passing the 'options' reference as an argument to the constructor.
@@ -79,7 +79,7 @@ String choice = scan.nextLine();
 
 4.g Let the <code>showMenu</code> method return the user's choice. 
 
-4.h Create a method, <code>public static void doAction(int choice)</code> in the Main class. The <code> int choice </code> parameter represents the user choice of option. 
+4.h Create a method, <code>public static void doAction(int choice)</code> in the Main class. The <code> int choice </code> parameter represents the user choice of option. (Don't forget to convert the String to an int).
 
 4.i In the body of the method write a <code>switch-case</code> where:
    + case 1 will print "Starting the game now"
