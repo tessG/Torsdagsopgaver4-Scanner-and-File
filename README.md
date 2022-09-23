@@ -52,7 +52,7 @@ Today's tasks should be coded using the IntelliJ IDE. For each Task you will cre
   <p>use a for-each loop for printing the options</p>
 </details>
 
-3.f. Still in the <code>showMenu</code> method, create a new Scanner object and then a variable <code>String choice<code> and assign it the user's input.
+3.f. Still in the <code>showMenu</code> method, create a new Scanner object and then a variable <code>String choice</code> and assign it the user's input.
 
 <details>
   <summary>Hint</summary>
