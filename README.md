@@ -109,11 +109,17 @@ Have the method load the file above called coffees.txt, like this
 The solution to this step is given below, but give it a go before peeping.
 <details>
   <summary> The solution to this step:
-  </summary><code>try {
-         Scanner scan = new Scanner(file);       
+  </summary>
+  <code>try {
+
+         Scanner scan = new Scanner(file); 
+
      }catch(FileNotFoundException e){
+
         System.out.println("File not found. Check path and filename");  
-      }</code></p>
+
+      }</code>
+      </p>
 </details>
 
 
