@@ -50,13 +50,13 @@ NOTE: Task 3 and 5 are not easy. Follow the steps as long as you can. Use the hi
 3.d Add a constructor to the Menu class that matches the instantiation made in 3.c. The Menu class must have a private attribute of the same type as the parameter passed in the constructor. Assign the passed options ArrayList to the private options ArrayList 
 <details>
   <summary>Hint</summary>
-  <p>this.options = options</p>
+  <p><code>this.options = options</code></p>
 </details>
 
 3.e Create a method in the Menu class, <code>showMenu</code> that prints the sentence "Choose an option by typing the number associated". Then print each individual option on its own line.  
  <details>
   <summary>Hint</summary>
-  <p>use a for-each loop for printing the options</p>
+  <p>use a <code>for-each</code> loop for printing the options</p>
 </details>
 
 3.f. Still in the <code>showMenu</code> method, create a new Scanner object and then a variable <code>String choice</code> and assign it the user's input.
@@ -64,8 +64,12 @@ NOTE: Task 3 and 5 are not easy. Follow the steps as long as you can. Use the hi
 <details>
   <summary>Hint</summary>
   <p>
+    <code>
+
 Scanner scan = new Scanner(System.in);
+
 String choice = scan.nextLine();
+</code>
 </p>
 </details>
 
