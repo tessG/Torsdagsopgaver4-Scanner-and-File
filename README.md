@@ -94,7 +94,7 @@ Save it as a menu.csv file and placed it in the same folder as Cafe.java
 
 4.b Create a class called Main with a main method. 
 
-4.c Create another class called Cafe. Give it an attribute called 'coffees' of type ArrayList<String>. 
+4.c Create another class called Cafe. Give it an attribute called 'coffees' of type ArrayList\<String\>. 
 (Later you will fill this ArrayList with names of the coffees from the textfile).
 
 
@@ -135,11 +135,8 @@ Use a while loop with hasNextLine() on the Scanner instance, to loop over the li
 
 4.h Still in the main method, print all the elements of the  attribute coffees in the the Cafe instance you just created.
 <detail>
-  <summary> peep solution:
-  </summary>
-<code>
-  you should use a for loop, and in the body of the loop use the <code>get()</code> method of ArrayList.
-</code>      
+  <summary> Hint:</summary>
+  you should use a for loop, and in the body of the loop use the <code>get()</code> method of ArrayList.   
 </detail>
 
 
