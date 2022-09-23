@@ -97,18 +97,16 @@ String choice = scan.nextLine();
 
 ## Task 5: load options
  
-5.a Start a new textfile with the exact text given here:
-"Expresso", "Americano" , "Macchiato", "Flat White",  "Latte"
-Save it as a menu.csv file and placed it in the same folder as Cafe.java
+5.a Above you will see a file called coffees.txt. Open it and check that is contains 5 names for types of coffee. Download it, or copy it to a new textfile and save it with the same name. Place coffees.txt in the same folder as the classes you will write for this task.
 
 5.b Create a class called Main with a main method. 
 
-5.c Create another class called Cafe. Give it an attribute called 'coffees' of type ArrayList\<String\>. 
-(Later you will fill this ArrayList with names of the coffees from the textfile).
+5.c Create another class called Cafe. Give it an attribute called 'coffeeMenu' of type ArrayList\<String\>. 
+(Later you will fill this ArrayList with the names of the coffees from the textfile).
 
 
 5.c In the Cafe class, add a method <code>loadMenuData</code> 
-Have the method load the file above called coffees.txt, like this 
+Have the method load the coffees.txt file like this:
 <code>File file = new File("coffees.txt) </code>  
 (make sure that the path is right)
 
@@ -143,7 +141,7 @@ Use a while loop with hasNextLine() on the Scanner instance, to loop over the li
 
   while(scan.hasNextLine()){
 
-        coffees.add(scan.nextLine());
+        coffeeMenu.add(scan.nextLine());
 
   }
 
@@ -152,7 +150,7 @@ Use a while loop with hasNextLine() on the Scanner instance, to loop over the li
 
 5.g In the main method create a new instance of the Cafe class and call its <code>loadMenuData</code> -method.
 
-5.h Still in the main method, print all the elements of the  attribute coffees in the the Cafe instance you just created.
+5.h Still in the main method, print all the elements of the  attribute <code>coffeeMenu</code> of the Cafe instance you just created.
 <details>
   <summary> Hint:</summary>
   you should use a for loop, and in the body of the loop use the <code>get()</code> method of ArrayList, to get hold of the item before printing it.  
