@@ -118,8 +118,9 @@ The solution to this step is given below, but give it a go before peeping.
 
         System.out.println("File not found. Check path and filename");  
 
-      }</code>
-      </p>
+      }
+
+</code>
 </details>
 
 
