@@ -38,6 +38,7 @@ NOTE: Task 4 and 6 are not easy. Follow the steps as long as you can. Use the hi
 ---
 
 ## Task 4. Textbased menu for a game
+In this program the user is presented with a list of option. When he types an option, the program will print a respons that corresponds to his choice.
 4.a Create an entity class, Menu and a client class, Main with a main method.
 
 4.b In the main method create an ArrayList of type String called 'options' with the following values:
@@ -96,7 +97,8 @@ String choice = scan.nextLine();
 ---
 
 ## Task 6: load coffee menu for a cafe
- 
+In this program we will load a list of coffee names and display it to the user. We will create a Cafe class that loads the list and a Main class that tests that the Cafe class works as expected.
+
 6.a Above you will see a file called coffees.txt. Open it and check that is contains 5 names for types of coffee. Download it, or copy it to a new textfile and save it with the same name. Place coffees.txt in the same folder as the classes you will write for this task.
 
 6.b Create a class called Main with a main method. 
