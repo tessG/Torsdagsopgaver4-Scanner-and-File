@@ -52,7 +52,8 @@ Today's tasks should be coded using the IntelliJ IDE. For each Task you will cre
   <p>use a for-each loop for printing the options</p>
 </details>
 
-+ Create a new Scanner object and then a variable <code>String choice<code> and assign it the user's input
+3.f. Still in the <code>showMenu</code> method, create a new Scanner object and then a variable <code>String choice<code> and assign it the user's input.
+
 <details>
   <summary>Hint</summary>
   <p>
@@ -60,7 +61,8 @@ Scanner scan = new Scanner(System.in);
 String choice = scan.nextLine();
 </p>
 </details>
-+ Let the <code>showMenu</code> method return the user's choice. 
+
+3.g Let the <code>showMenu</code> method return the user's choice. 
 
 <details>
   <summary>Hint</summary>
@@ -70,12 +72,12 @@ String choice = scan.nextLine();
 </details>
 
 
- 
- 
-3.f In the main method call the showMenu method on the Menu instance, saving the return value (the user response) in a variable. Pass this variable as you call another method in the Main class, <code>doAction</code>, which you will write next.
+3.h In the main method call the showMenu method on the Menu instance, saving the return value (the user response) in a variable. Pass this variable as you call another method in the Main class, <code>doAction</code>, which you will write next.
 
 
-3.g Create a method, <code>doAction</code> in the Main class, that accepts a value of type int as argument. This value represents the user choice of option. In the body of the method write a switch-case where:
+3.i Create a method, <code>public static doAction(int choice)</code> in the Main class. The <code> int choice </code>> parametre represents the user choice of option. 
+
+3.j In the body of the method write a switch-case where:
    <li>case 1 will print "Starting the game now"</li>
    <li>case 2 will print "Fetching previously saved game data"</li>
    <li>case 3 will print "Game paused"</li>
