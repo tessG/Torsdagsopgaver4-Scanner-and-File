@@ -107,21 +107,21 @@ Have the method load the file above called coffees.txt, like this
 4.d In this step you will read from the file, using a Scanner object: Add the <code>file</code> instance to a new Scanner object. (This piece of code will need to be wrapped in a try -catch block)
 
 The solution to this step is given below, but give it a go before peeping.
-<detail>
+<details>
   <summary> The solution to this step:
   </summary><code>try {
          Scanner scan = new Scanner(file);       
      }catch(FileNotFoundException e){
         System.out.println("File not found. Check path and filename");  
       }</code></p>
-</detail>
+</details>
 
 
 4.e Inside the try block from the last step, you will now add this piece of code that loops over the lines of the textfile:
 
 
 Use a while loop with hasNextLine() on the Scanner instance, to loop over the lines of the file and add the lines to the coffees ArrayList in this class.
-<detail>
+<details>
   <summary> peep solution:
   </summary>
 <code>
@@ -129,15 +129,15 @@ Use a while loop with hasNextLine() on the Scanner instance, to loop over the li
         coffees.add(scan.nextLine());
   }
 </code>      
-</detail>
+</details>
 
 4.g In the main method create a new instance of the Cafe class and call its <code>loadMenuData</code> -method.
 
 4.h Still in the main method, print all the elements of the  attribute coffees in the the Cafe instance you just created.
-<detail>
+<details>
   <summary> Hint:</summary>
   you should use a for loop, and in the body of the loop use the <code>get()</code> method of ArrayList.   
-</detail>
+</details>
 
 
 
