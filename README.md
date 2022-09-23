@@ -137,7 +137,7 @@ Use a while loop with hasNextLine() on the Scanner instance, to loop over the li
         coffees.add(scan.nextLine());
 
   }
-  
+
 </code>      
 </details>
 
@@ -146,7 +146,7 @@ Use a while loop with hasNextLine() on the Scanner instance, to loop over the li
 4.h Still in the main method, print all the elements of the  attribute coffees in the the Cafe instance you just created.
 <details>
   <summary> Hint:</summary>
-  you should use a for loop, and in the body of the loop use the <code>get()</code> method of ArrayList.   
+  you should use a for loop, and in the body of the loop use the <code>get()</code> method of ArrayList, to get hold of the item before printing it.  
 </details>
 
 
