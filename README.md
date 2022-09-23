@@ -101,6 +101,13 @@ Save it as a menu.csv file and placed it in the same folder as Cafe.java
 4.c In the Cafe class, add a method  <code>loadMenuData</code>with the parameter 'filename' of type String. 
 Have the method load the file, add it to a Scanner object.
 
+<detail>
+  <summary>Hint</summary>
+  <p>
+    <code>File file = new File(filename) </code>  
+    (make sure that the path is right!)
+  </p>
+</detail>
 
 4.d Add the file to a new Scanner object. This will need to be wrapped in a try -catch block. 
 The solution to this step is given below, but give it a go before peeping.
@@ -140,7 +147,7 @@ The solution to this step is given below, but give it a go before peeping.
 4.g Still in the main method, create a new instance of the Menu class, with the <code>menu</code> ArrayList as argument. 
 Call the <code>showMenu</code> method on the Menu object. 
 
-4.g The  <code>Menu.showMenu()</code> -method will return the user's choice. 
+4.h The  <code>Menu.showMenu()</code> -method will return the user's choice. 
 From the main method, print the name of the coffee that corresponds to the user's choice. 
 
 
