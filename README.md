@@ -38,57 +38,70 @@ NOTE: Task 4 and 6 are not easy. Follow the steps as long as you can. Use the hi
 ---
 
 ## Task 4. Textbased menu for a game
-In this program the user is presented with a list of option. When he types the number associated with an option, the program will print a respons that corresponds to his choice.
+In this program the user is presented with a list of actions. When he types a number associated with an action, the program will print a response that corresponds to that action.
 
-4.a Create an entity class, Menu and a client class, Main with a main method.
-
-4.b In the main method create an ArrayList of type String called 'options' with the following values:
-+ "1. Start game"
-+ "2. Resume game"
-+ "3. Pause game"
-+ "4. End game"
+4.a Create an entity class, Menu with a private attribute, 'options' of type ArrayList. 
+Add a constructor with a parameter of type ArrayList.  
+Assign the value received, to the 'options' attribute. 
 
 
-4.c Still in the main method, instantiate the Menu class passing the 'options' reference as an argument to the constructor.
+4.b Create a client class, Main with a main method. 
+(You will use this class to test the Menu class).
 
-4.d Add a constructor to the Menu class that matches the instantiation made in 4.c. The Menu class must have a private attribute of the same type as the parameter passed in the constructor. Assign the passed options ArrayList to the private options ArrayList 
+4.c In the main method create an ArrayList of type String called actions. Don't forget to import the class. Add the following String values to the actions ArrayList:
++ "1) Start game"
++ "2) Resume game"
++ "3) Pause game"
++ "4) End game"
+
 <details>
-  <summary>Hint</summary>
-  <p><code>this.options = options</code></p>
+  <summary>Tip for testing:</summary>
+You can test the actions ArrayList by printing one of the elements:
+<code>System.out.print(actions.get(2)) // expected output: "Pause game"</code>
 </details>
 
-4.e Create a method in the Menu class, <code>showMenu</code> that prints the sentence "Choose an option by typing the number associated" and prints each element <code>options</code>  attribute (the ArrayList you created in step 4.d)  
+4.d Still in the main method, instantiate the Menu class with the actions reference as an argument to the constructor. 
+
+4.e Create a method in the Menu class, <code>showMenu</code> that prints the sentence "Type a number to choose" and then prints each element in the <code>options</code> attribute. 
  <details>
   <summary>Hint</summary>
-  <p>use a <code>for-each</code> loop for printing the options</p>
+  <p>use a <code>for-each</code>loop for printing the options
+  </p>
 </details>
 
-4.f. Still in the <code>showMenu</code> method, create a new Scanner object and then a variable <code>String choice</code> and assign it the user's input.
+4.f Still in the <code>showMenu</code> method, create a new Scanner object. Declare a variable <code>String choice</code> and assign it the user's input. 
 
 <details>
   <summary>Hint</summary>
   <p>
     <code>
+    scanner.nextLine();
+    </code>
+  </p>
+</details>
 
-Scanner scan = new Scanner(System.in);
-
-String choice = scan.nextLine();
+<details>
+  <summary>Solution to this step</summary>
+  <p>
+    <code>
+    Scanner scan = new Scanner(System.in);
+    String choice = scan.nextLine();
 </code>
 </p>
 </details>
 
 4.g Let the <code>showMenu</code> method return the user's choice. 
 
-4.h Create a method, <code>public static void doAction(int choice)</code> in the Main class. The <code> int choice </code> parameter represents the user choice of option. 
+4.h Create a method in the Main class, for testing that the user dialog in the Menu class works as expected. The method should have this signature: <code>public static void doAction(int action)</code>. The <code> int action </code> parameter represents the user's choice of action. 
 
-4.i In the body of the method write a <code>switch-case</code> where:
-   + case 1 will print "Starting the game now"
-   + case 2 will print "Fetching previously saved game data"
-   + case 3 will print "Game paused"
-   + case 4 will print "Ending game"
+4.i In the body of the <code>doAction</code> method, write a <code>switch-case</code> whith a case for each of the 4 actions added in step 4.b. In each case block you will print a message that corresponds to the user's choice of action:
+   + 1: "Starting the game now"
+   + 2: "Fetching previously saved game data"
+   + 3: "Game paused"
+   + 4: "Ending game"
 
 
-4.j In the main method call the  <code>showMenu</code> -method on the Menu instance, saving the return value (the user response) in a variable. Convert the value to an int before using it as an argument in a call to the <code>doAction</code> method in Main.
+4.j In the main method call the <code>showMenu</code> -method on the Menu instance, saving the return value (the user response) in a variable. Convert the value to an int before using it as an argument in a call to the <code>doAction</code> method in Main.
 
 
 ---
