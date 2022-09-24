@@ -57,7 +57,10 @@ Assign the value received, to the 'options' attribute.
 <details>
   <summary>Tip for testing:</summary>
 You can test the actions ArrayList by printing one of the elements:
-<code>System.out.print(actions.get(2)) // expected output: "Pause game"</code>
+
+<code>
+System.out.print(actions.get(2)) // expected output: "Pause game"
+</code>
 </details>
 
 4.d Still in the main method, instantiate the Menu class with the actions reference as an argument to the constructor. 
@@ -74,7 +77,7 @@ You can test the actions ArrayList by printing one of the elements:
 <details>
   <summary>Hint</summary>
   <p>
-    <code>
+    The user input will be returned by <code>
     scanner.nextLine();
     </code>
   </p>
