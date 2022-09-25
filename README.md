@@ -1,4 +1,4 @@
-### Exercises with Scanner and Files
+### Exercises with ArrayList, Scanner and Files
 Today's tasks should be coded using the IntelliJ IDE. For each Task you will create a new project, as each task will require you to create a Main class with a main method (except for Task 2). 
 In some tasks you will write all the code in this main method, while in others you will be asked to make both a Main class with a main method in it (sometimes refered to as the "client class") and an "entity class" whithout a main method but with a constructor. 
 
@@ -10,7 +10,8 @@ In this task you will make two entity classes and a class to test them. The enti
 
 1.a: Start a new project and create a class called Course. The Course class should have one field/instanse variable/attribute (different names for the same thing) called <code>name</code> of the type String. The field should be declared private. 
 
-1.b: Create another class called Student. The Student class should have two fields/instans variables: <code>name</code> of the type String and <code>courses</code> of the type ArrayList\<Course\>.Both fields should be declared private.
+1.b: Create another class called Student. The Student class should have two fields/instans variables: <code>name</code> of the type String and <code>courses</code> of the type ArrayList\<Course\>. Both fields should be declared private. Make sure that the variable <code>courses</code> is given a value. You should make a new ArrayList (using the keyword new) and assign it to the variable <code>courses</code>.
+
 <details>
   <summary>Hint</summary>
   <p>Remember to import java.util.ArrayList.
@@ -22,8 +23,18 @@ In this task you will make two entity classes and a class to test them. The enti
 </details>
 
 1.c: Make a constructor for the Course class. The constructor should take one parameter; a <code>String name</code>. 
-Make a constructor for the Student class. The constructor should also take one parameter; <code>String</code>
+Make a constructor for the Student class. The constructor should also take one parameter; <code>String name</code>.
 
+1.d: Make a method <code>addCourse(Course></code> in the Student class. The method should take a Course-object as a parameter and add it to the Student's ArrayList <code>courses</code>.
+
+1.e: Make toString()-methods for both classes. Have the toString-methods return nice Strings-representations of the objects, for instance <i>"Student: " + name</i> for the Student-objects. 
+<details>
+  <summary>Hint</summary>
+  <p>You can read about toString <a href="https://www.geeksforgeeks.org/object-tostring-method-in-java/">here</a>.
+  </p>
+</details>
+
+1.f: Test your classes by making a class called TestStudents with a main-method, where you play around with the object. You can take a look at the TestStudents-class provided (TestStudents.java) for inspiration. 
 
 ## Task 2: Scanner basics: calculate retirement age
 2.a: Start a new project and create a class called Main with a main method.
