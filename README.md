@@ -28,6 +28,15 @@ NOTE: Task 4 and 6 are not easy. Follow the steps as long as you can. Use the hi
     </code>
   </p>
 </details>
+<details>
+  <summary>Solution to this step</summary>
+  <p>
+    <code>
+    Scanner scanner = new Scanner(System.in);
+    String name = scan.nextLine();
+</code>
+</p>
+</details>
 
 2.e: Print the value the user writes (print the <code>name</code> variable).
 
@@ -121,9 +130,9 @@ The method should print
 </p>
 </details>
 
-4.g Let the <code>showMenu</code> method return the user's choice. 
+4.g Let the <code>showMenu</code> method return the user's choice (as a String). 
 
-4.h Create a method in the Main class, for testing that the user dialog in the Menu class works as expected. The method should have this signature: <code>public static void doAction(int action)</code>. The <code> int action </code> parameter represents the user's choice of action. 
+4.h Create a method in the Main class, for testing that the user dialog in the Menu class works as expected (this method needs to be static). The method should have this signature: <code>public static void doAction(int action)</code>. The <code> int action </code> parameter represents the user's choice of action. 
 
 4.i In the body of the <code>doAction</code> method, write a <code>switch-case</code> whith a case for each of the 4 actions added in step 4.b. In each case block you will print a message that corresponds to the user's choice of action:
    + 1: "Starting the game now"
