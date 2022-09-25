@@ -52,15 +52,20 @@ NOTE: Task 4 and 6 are not easy. Follow the steps as long as you can. Use the hi
 ## Task 4. Textbased menu for a game
 In this program the user is presented with a list of actions. When he types a number associated with an action, the program will print a response that corresponds to that action.
 
-4.a Create an entity class, Menu with a private attribute, 'options' of type ArrayList. 
+4.a Create an entity class, <code>Menu</code> with a private field/instanse variable, <code>options</code> of type ArrayList. 
+ <details>
+  <summary>Hint</summary>
+  <p>Remember to import java.util.ArrayList.
+  </p>
+</details>
 Add a constructor with a parameter of type ArrayList.  
-Assign the value received, to the 'options' attribute. 
+Assign the value received, to the <code>options</code> field. 
 
 
-4.b Create a client class, Main with a main method. 
-(You will use this class to test the Menu class).
+4.b Create a client class, <code>Main</code> with a main method. 
+(You will use this class to test the <code>Menu</code> class).
 
-4.c In the main method create an ArrayList of type String called actions. Don't forget to import the class. Add the following String values to the actions ArrayList:
+4.c In the main method create an ArrayList of type String. Call the ArrayList-variable <code>actions</code>. Add the following String values to the <code>actions</code> ArrayList:
 + "1) Start game"
 + "2) Resume game"
 + "3) Pause game"
