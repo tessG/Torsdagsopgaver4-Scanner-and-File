@@ -9,28 +9,40 @@ NOTE: Task 4 and 6 are not easy. Follow the steps as long as you can. Use the hi
 [...]
 
 ## Task 2: Scanner basics: calculate retirement age
-2.a: Start a new project and create a Main class with a main method.
+2.a: Start a new project and create a class called Main with a main method.
 
 2.b: In the main method start by printing a message to the user: "Please type your name".
 
 2.c: Instantiate (create) a Scanner object for reading the command line (remember to import the Scanner class from the util library: <code>import java.util.Scanner; </code>)
+<details>
+  <summary>Hint</summary>
+  <p>Remember that Scanner can take System.in as an argument to the constructor. System.in reads from the terminal/command prompt just as System.out prints to it.</p>
+</details>
 
-2.d: Declare a String variable, <code>name</code> and assign the content of the scanner to it.
+2.d: Declare a String variable, <code>name</code> and assign the content of the Scanner to it.
+<details>
+  <summary>Hint</summary>
+  <p>You will need to use one of Scanner's methods to read the content. You can get an overview of Scanner's methods in the <a href="https://docs.oracle.com/javase/8/docs/api/">Java API</a>.</p>
+</details>
 
-2.e: Print the value the user writes (print the <code>name</code> variable)
+2.e: Print the value the user writes (print the <code>name</code> variable).
 
 2.f: Print another message to the user: "Please type your age"
 
-2.g: Declare another variable of type int, <code>age</code> and assign the content of the scanner to it (you may reuse the Scanner object created in 2.c).
+2.g: Declare another variable of type int, <code>age</code>, and assign the content of the Scanner to it (you may reuse the Scanner object created in 2.c).
+<details>
+  <summary>Hint</summary>
+  <p>You will need to use <i>another</i> of Scanner's methods to read the content as you are now reading an int and not a String.</p>
+</details>
 
-2.h: Print the value the user writes (print the <code>age</code> variable)
+2.h: Print the value the user writes (print the <code>age</code> variable).
 
-2.i: Declare a third variable of type int. To this variable, assign the calculated number of years until the user can retire. You may assume retirement starts at 67 years. Print the result
+2.i: Declare a third variable of type int. You can call this <code>result</code> or whatever you want. To this variable, assign the calculated number of years until the user can retire. You may assume retirement starts at 67 years. Print the result.
 
 ---
 
 ## Task 3: Finish the GuessANumber class
-3.a Open the java file above called GuessANumber.java and try to finish the code. Follow the steps written as comments in the <code>makeAGuess</code> method. Recursion is mentioned. This means that the method must call itself
+3.a Open the java file above called GuessANumber.java and try to finish the code. Follow the steps written as comments in the <code>makeAGuess</code> method. Recursion is mentioned. This means that the method must call itself. If you cannot make recursion work, you can use a loop inside the method instead. 
 <details>
   <summary>Not sure about recursion?</summary>
   <p><a href="https://www.geeksforgeeks.org/recursion-in-java/">Read about it here</a></p>
