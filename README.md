@@ -65,7 +65,7 @@ NOTE: Task 4 and 6 are not easy. Follow the steps as long as you can. Use the hi
 ## Task 4. Textbased menu for a game
 In this program the user is presented with a list of actions. When he types a number associated with an action, the program will print a response that corresponds to that action.
 
-4.a Create an entity class, <code>Menu</code> with a private field/instanse variable, <code>options</code> of type ArrayList. 
+4.a Create an entity class, <code>Menu</code> with a private field/instanse variable, <code>options</code> of type ArrayList\<String\>. 
  <details>
   <summary>Hint</summary>
   <p>Remember to import java.util.ArrayList.
@@ -78,7 +78,7 @@ Assign the value received, to the <code>options</code> field.
 4.b Create a client class, <code>Main</code> with a main method. 
 (You will use this class to test the <code>Menu</code> class).
 
-4.c In the main method create an ArrayList of type String. Call the ArrayList-variable <code>actions</code>. Add the following String values to the <code>actions</code> ArrayList:
+4.c In the main method create an ArrayList\<String\> Call the ArrayList-variable <code>actions</code>. Add the following String values to the <code>actions</code> ArrayList:
 + "1) Start game"
 + "2) Resume game"
 + "3) Pause game"
@@ -151,17 +151,17 @@ The method should print
 ---
 
 ## Task 6: load coffee menu for a cafe
-In this program we will load a list of coffee names and display it to the user. We will create a Cafe class that loads the list and a Main class that tests that the Cafe class works as expected.
+In this program we will load a list of coffee names and display it to the user. We will create a <code>Cafe</code> class that loads the list and a <code>Main</code> class that tests that the Cafe class works as expected.
 
 6.a Above you will see a file called coffees.txt. Open it and check that is contains 5 names for types of coffee. Download it, or copy it to a new textfile and save it with the same name. Place coffees.txt in the same folder as the classes you will write for this task.
 
-6.b Create a class called Main with a main method. 
+6.b Create a class called <code>Main</code> with a main method. 
 
-6.c Create another class called Cafe. Give it an attribute called 'coffeeMenu' of type ArrayList\<String\>. 
+6.c Create another class called <code>Cafe</code>. Give it an attribute (also called field/instanse variable) called <code>coffeeMenu</code> of type ArrayList\<String\>. 
 (Later you will fill this ArrayList with the names of the coffees from the textfile).
 
 
-6.c In the Cafe class, add a method <code>loadMenuData</code> 
+6.c In the <code>Cafe</code> class, add a method <code>loadMenuData</code> 
 Have the method load the coffees.txt file like this:
 <code>File file = new File("coffees.txt) </code>  
 (make sure that the path is right)
@@ -209,7 +209,7 @@ Use a while loop with hasNextLine() on the Scanner instance, to loop over the li
 6.h Still in the main method, print all the elements of the  attribute <code>coffeeMenu</code> of the Cafe instance you just created.
 <details>
   <summary> Hint:</summary>
-  you should use a for loop, and in the body of the loop use the <code>get()</code> method of ArrayList, to get hold of the item before printing it.  
+  You should use a for-loop, and in the body of the loop use the <code>get()</code> method of ArrayList, to get hold of the item before printing it.  
 </details>
 
 
