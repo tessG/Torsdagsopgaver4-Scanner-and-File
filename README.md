@@ -79,10 +79,10 @@ Assign the value received, to the <code>options</code> field.
 (You will use this class to test the <code>Menu</code> class).
 
 4.c In the main method create an ArrayList\<String\> Call the ArrayList-variable <code>actions</code>. Add the following String values to the <code>actions</code> ArrayList:
-+ "1) Start game"
-+ "2) Resume game"
-+ "3) Pause game"
-+ "4) End game"
+"1) Start game"
+"2) Resume game"
+"3) Pause game"
+"4) End game"
 
 <details>
   <summary>Tip for testing:</summary>
@@ -93,15 +93,10 @@ System.out.print(actions.get(2)) // expected output: "Pause game"
 </code>
 </details>
 
-4.d Still in the main method, instantiate (create an object of) the Menu class with the <code>actions</code> ArrayList as an argument to the constructor. (You 
+4.d Still in the main method, instantiate (create an object of) the Menu class with the <code>actions</code> ArrayList as an argument to the constructor. 
 
 4.e Create a method in the Menu class, <code>showMenu</code> that prints the sentence "Type a number to choose" and then prints each element in the <code>options</code> ArrayList.
-The method should print
-"Type a number to choose:
-1) Start game
-2) Resume game
-3) Pause game
-4) End game"
+The output should resemble the list shown in 4.c.
 
  <details>
   <summary>Hint</summary>
@@ -143,7 +138,17 @@ The method should print
 
 4.j In the main method call the <code>showMenu</code> -method on the Menu instance, saving the return value (the user response) in a variable. Convert the value to an int before using it as an argument in a call to the <code>doAction</code> method in Main.
 
+<details>
+  <summary>Hint: Konvertering af String til int</summary>
+  <p>
+    <code>
+    String response = showMenu();
+    int convertedResponse = Integer.parseInt(response);
+    doAction(convertedResponse);
 
+</code>
+</p>
+</details>
 ---
 ## Task 5: load file and write to file basics
 [...]
