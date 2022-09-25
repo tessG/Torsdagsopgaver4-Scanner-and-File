@@ -25,7 +25,7 @@ In this task you will make two entity classes and a class to test them. The enti
 1.c: Make a constructor for the Course class. The constructor should take one parameter; a <code>String name</code>. 
 Make a constructor for the Student class. The constructor should also take one parameter; <code>String name</code>.
 
-1.d: Make a method <code>addCourse(Course></code> in the Student class. The method should take a Course-object as a parameter and add it to the Student's ArrayList <code>courses</code>.
+1.d: Make a method <code>addCourse</code> in the Student class. The method should take a Course-object as a parameter and add it to the Student's ArrayList <code>courses</code>.
 
 1.e: Make toString()-methods for both classes. Have the toString-methods return nice Strings-representations of the objects, for instance <i>"Student: " + name</i> for the Student-objects. 
 <details>
