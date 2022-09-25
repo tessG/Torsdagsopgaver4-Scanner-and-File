@@ -6,7 +6,24 @@ NOTE: Task 4 and 6 are not easy. Follow the steps as long as you can. Use the hi
 
 ---
 ## Task 1:ArrayList basics
-[...]
+In this task you will make two entity classes and a class to test them. The entity classes represents students and their courses. 
+
+1.a: Start a new project and create a class called Course. The Course class should have one field/instanse variable/attribute (different names for the same thing) called <code>name</code> of the type String. The field should be declared private. 
+
+1.b: Create another class called Student. The Student class should have two fields/instans variables: <code>name</code> of the type String and <code>courses</code> of the type ArrayList\<Course\>.Both fields should be declared private.
+<details>
+  <summary>Hint</summary>
+  <p>Remember to import java.util.ArrayList.
+  The beginning of the class should look like this
+  <code>import java.util.ArrayList; 
+  public class Student{
+  </code>
+  </p>
+</details>
+
+1.c: Make a constructor for the Course class. The constructor should take one parameter; a <code>String name</code>. 
+Make a constructor for the Student class. The constructor should also take one parameter; <code>String</code>
+
 
 ## Task 2: Scanner basics: calculate retirement age
 2.a: Start a new project and create a class called Main with a main method.
