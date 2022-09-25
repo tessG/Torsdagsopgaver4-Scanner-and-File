@@ -20,11 +20,12 @@ public class GuessANumber {
 		// Create a Scanner object   	 
     	// Read user input
     	
-        //use hasNextDouble to check if input is numeric, 
+        //use hasNextInt to check if input is numeric, 
         // if so...
         //   Compare it with the random number
-        //   Let the user know the result of the comparison
-        //   Let the user try again by calling this method recursively
+        //   Let the user know the result of the comparison (was it the right number?)
+        //   If it was NOT the rigth number, let the user try again by calling this method recursively
+	//   (If you are not sure how to do recursion, you can use a loop instead)
         //   Help the user by revealing wether the guess was lower or higher than the target number
         // if input was not numeric show an error message and call this method recursively
 
