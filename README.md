@@ -22,7 +22,11 @@ NOTE: Task 4 and 6 are not easy. Follow the steps as long as you can. Use the hi
 2.d: Declare a String variable, <code>name</code> and assign the content of the Scanner to it.
 <details>
   <summary>Hint</summary>
-  <p>You will need to use one of Scanner's methods to read the content. You can get an overview of Scanner's methods in the <a href="https://docs.oracle.com/javase/8/docs/api/">Java API</a>.</p>
+  <p>
+    The user input will be returned by <code>
+    scanner.nextLine();
+    </code>
+  </p>
 </details>
 
 2.e: Print the value the user writes (print the <code>name</code> variable).
@@ -32,7 +36,7 @@ NOTE: Task 4 and 6 are not easy. Follow the steps as long as you can. Use the hi
 2.g: Declare another variable of type int, <code>age</code>, and assign the content of the Scanner to it (you may reuse the Scanner object created in 2.c).
 <details>
   <summary>Hint</summary>
-  <p>You will need to use <i>another</i> of Scanner's methods to read the content as you are now reading an int and not a String.</p>
+  <p>You will need to use <i>another</i> of Scanner's methods to read the content as you are now reading an int and not a String. You can get an overview of Scanner's methods in the <a href="https://docs.oracle.com/javase/8/docs/api/">Java API</a>.</p>
 </details>
 
 2.h: Print the value the user writes (print the <code>age</code> variable).
@@ -80,16 +84,23 @@ System.out.print(actions.get(2)) // expected output: "Pause game"
 </code>
 </details>
 
-4.d Still in the main method, instantiate the Menu class with the actions reference as an argument to the constructor. 
+4.d Still in the main method, instantiate (create an object of) the Menu class with the <code>actions</code> ArrayList as an argument to the constructor. (You 
 
-4.e Create a method in the Menu class, <code>showMenu</code> that prints the sentence "Type a number to choose" and then prints each element in the <code>options</code> attribute. 
+4.e Create a method in the Menu class, <code>showMenu</code> that prints the sentence "Type a number to choose" and then prints each element in the <code>options</code> ArrayList.
+The method should print
+"Type a number to choose:
+1) Start game
+2) Resume game
+3) Pause game
+4) End game"
+
  <details>
   <summary>Hint</summary>
   <p>use a <code>for-each</code>loop for printing the options
   </p>
 </details>
 
-4.f Still in the <code>showMenu</code> method, create a new Scanner object. Declare a variable <code>String choice</code> and assign it the user's input. 
+4.f Still in the <code>showMenu</code> method, create a new Scanner object that reads from the terminal/command prompt by using System.in. Declare a String variable <code>choice</code> and assign it the user's input. 
 
 <details>
   <summary>Hint</summary>
